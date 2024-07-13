@@ -159,7 +159,8 @@ provided by the data-driven learning component, to <math xmlns="http://www.w3.or
       <p>To provide a more comprehensive and challenging stress test for existing guardrail models and <math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mi>R</mi><mn>2</mn></msup></math>-Guard, we propose a
 challenging safety benchmark, TwinSafety. This benchmark includes all hierarchy levels of maliciousness, paragraph-level, phrase-level, and word-level, and features a pairwise construction method with novel categories. Specifically, we construct comprehensive categories including intent-hiding, mismatched-context, proverb-usage, double-entendre,
 media-usage, science-purpose, and virtual-context. We construct pairs of safe and unsafe prompts with minimal token differences but significant semantic gaps in terms of unsafety. The categories and examples are provided in Table 1.</p>
-          <img src="static/images/data.png" alt="data" height="100%">
+      <br>
+      <img src="static/images/data.png" alt="data" height="70%">
         </div>
 
     </div>
@@ -178,13 +179,14 @@ ensemble learning, the effectiveness of <math xmlns="http://www.w3.org/1998/Math
 overhead with logical inference.
 Our TwinSafety dataset leads to overall lower AUPRC on different guardrail models, demonstrating the challenge of
 our datasets and motivating the development of future guardrail models.
-
+<br>
 The results in Table 3 demonstrate that <math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mi>R</mi><mn>2</mn></msup></math>-Guard is more robust against multiple SOTA jailbreaks compared
 to other guardrail models. Both universal jailbreak strings (GCG-U1, GCG-U2) and optimized jailbreak strings using
 safety-aligned LLMs (GCG-V) and the guardrail model LlamaGuard (GCG-L) do not perturb the UDR of <math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mi>R</mi><mn>2</mn></msup></math>-Guard.
 Even more adaptive GCG attacks against the distilled model of <math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mi>R</mi><mn>2</mn></msup></math>-Guard (GCG-R) and SOTA black-box attacks
 (AutoDAN) only slightly decrease the UDR of <math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mi>R</mi><mn>2</mn></msup></math>-Guard, and <math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mi>R</mi><mn>2</mn></msup></math>-Guard still outperforms other guardrail models by a
 significant margin.
+        <br>
       </p>
       <div id="results-carousel" class="carousel results-carousel">
         <div class="item item-video1">
